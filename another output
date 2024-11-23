@@ -1,0 +1,118 @@
+another structure:
+Starting Investment Portfolio Analysis...
+
+=== Indian Investment Portfolio Advisor ===
+
+Processing client profile...
+
+Client Profile:
+{'financial_goals': ['Retirement', "Children's Education"],       
+ 'initial_investment': 1000000.0,
+ 'investment_timeline': '10 years',
+ 'risk_tolerance': 'Moderate'}
+
+Sending profile to API...
+Profile created successfully!
+{'financial_situation': {'initial_investment': 1000000.0,
+                         'investment_category': 'Balanced Portfolio',
+                         'liquidity_needs': 'Low'},
+ 'investment_objectives': {'constraints': ['Tax-efficiency',      
+                                           'Maintaining liquidity for short '
+                                           'term needs'],
+                           'primary_goals': ['Retirement',        
+                                             "Children's Education"],
+                           'target_return': '7-9% p.a.'},
+ 'investment_strategy': {'asset_allocation': {'debt': '30%',      
+                                              'equity': '50%',    
+                                              'gold': '10%',      
+                                              'real_estate': '10%'},
+                         'investment_vehicles': {'direct_stocks': '20%',
+                                                 'fixed_income_instruments': '10%',
+                                                 'mutual_funds': {'debt_funds': '30%',
+                                                                  
+'equity_funds': '60%',
+                                                                  
+'hybrid_funds': '10%'},
+                                                 'real_estate_investments': '10%'},
+                         'tax_planning_strategy': 'Investing in ELSS Mutual '
+                                                  'Funds, Utilizing the '
+                                                  'benefits of Section 80C and '
+                                                  '10(14) of the Indian Income '
+                                                  'Tax Act'},     
+ 'risk_profile': {'investment_horizon': '10 years',
+                  'risk_capacity': 'Medium',
+                  'tolerance_level': 'Moderate'}}
+
+Processing portfolio data...
+
+Portfolio Data:
+{'Corporate FDs': 20.0,
+ 'Debt Mutual Funds': 20.0,
+ 'Equity Mutual Funds': 30.0,
+ 'Gold ETFs': 10.0,
+ 'Government Bonds': 20.0}
+
+Generating portfolio recommendation...
+Portfolio generated successfully!
+{'portfolio': {'Corporate_FDs': '20%',
+               'Gold_ETFs': '5%',
+               'Government_Bonds': '20%',
+               'Large_Cap_Stocks': '15%',
+               'Mid_Cap_Stocks': '15%',
+               'Mutual_Funds': '15%',
+               'Small_Cap_Stocks': '10%'},
+ 'strategy': "Considering the client's moderate risk tolerance and 10 years "
+             'investment horizon, we would suggest a balanced portfolio. We '
+             'start with a 40% allocation in equity, diversified across '
+             'large-cap (15%), mid-cap (15%) and small-cap stocks (10%). These '
+             'can be invested through mutual funds like ICICI Prudential '
+             'Bluechip Fund (for large-cap), Mirae Asset Large Cap Fund (for '
+             'mid-cap) and Kotak Standard Multicap Fund (for small-cap). Next, '
+             'a 40% allocation in debt instruments, with a mix of government '
+             'bonds (20%) and corporate FDs (20%) like HDFC Corporate Bond '
+             'Fund or Axis Banking & PSU Debt Fund. Further, a 5% allocation '
+             'in Gold ETFs like SBI Gold Fund or HDFC Gold Fund to hedge '
+             'against inflation and market volatility. Finally, a 15% '
+             'allocation in Mutual Funds to provide diversification and reduce '
+             'risk. For tax planning, invest in ELSS Mutual Funds, NPS, PPF, '
+             'Tax-saving FDs as per Section 80C and Section 10(14) of the '
+             'Indian Income Tax Act, 1961, to reduce taxable income.',
+ 'visualization_path': 'plot/portfolio_allocation.png'}
+
+=== Processing Market Analysis ===
+
+=== Processing Market Analysis ===
+
+Mutual Funds Analysis:
+
+Equity Funds:
+                 fund_name   category recommendation 1yr_returns 3yr_returns      risk_rating
+0        HDFC Top 100 Fund  Large Cap            BUY       12.5%       15.8%         Moderate
+1         Axis Midcap Fund    Mid Cap            BUY       14.2%       18.5%  Moderately High
+2  SBI Focused Equity Fund  Multi Cap           HOLD       11.8%       16.2%         Moderate
+
+Debt Funds:
+                              fund_name        category recommendation 1yr_returns 3yr_returns      risk_rating
+0  ICICI Prudential Corporate Bond Fund  Corporate Bond           
+ BUY        6.8%        8.2%  Low to Moderate
+1       Kotak Banking and PSU Debt Fund   Banking & PSU           
+ BUY        7.2%        8.5%              Low
+
+Bonds Analysis:
+
+Government Bonds:
+        bond_name  yield maturity recommendation risk_rating
+0  7.26% GOI 2033  7.26%     2033            BUY   Sovereign      
+1  7.37% GOI 2028  7.37%     2028           HOLD   Sovereign      
+
+Corporate Bonds:
+                bond_name  yield maturity recommendation risk_rating
+0         HDFC 7.95% 2025  7.95%     2025            BUY         Low
+1  LIC Housing 8.15% 2024  8.15%     2024            BUY         Low
+
+Fixed Deposits Analysis:
+    bank_name duration interest_rate recommendation               
+       special_benefits
+0         SBI  5 years         6.50%            BUY   Additional 0.5% for senior citizens
+1   HDFC Bank  3 years         7.00%            BUY  Additional 0.25% for senior citizens
+2  ICICI Bank  2 years         6.75%           HOLD  Additional 0.35% for senior citizens
