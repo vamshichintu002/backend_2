@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investment Portfolio API Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .result-box { 
+            border: 1px solid #ddd; 
+            padding: 20px; 
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .visualization {
+            margin: 20px 0;
+            text-align: center;
+        }
+        img { max-width: 100%; height: auto; }
+        pre { 
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Portfolio API Results</h1>
+        
+        <div class="result-box">
+            <h2>Portfolio Visualization</h2>
+            <div class="visualization">
+                <img src="plot/portfolio_allocation.png" alt="Portfolio Allocation">
+            </div>
+        </div>
+
+        <div class="result-box">
+            <h2>Latest API Response</h2>
+            <div id="apiResponse">
+                <pre id="responseData">
+{
+  "portfolio": {
+    "Large_Cap_Stocks": 35,
+    "Mid_Cap_Stocks": 10,
+    "Small_Cap_Stocks": 5,
+    "Government_Bonds": 20,
+    "Corporate_FDs": 20,
+    "Mutual_Funds": 5,
+    "Gold_ETFs": 5
+  },
+  "strategy": "Given the client's moderate risk tolerance and medium risk capacity, a balanced portfolio is suggested. A significant portion is invested in large-cap stocks (35%) due to their stability and consistent returns over the long-term. Mid-cap and small-cap stocks are riskier and hence comprise a smaller portion of the portfolio (10% and 5% respectively). Given the client's concerns about market volatility and inflation, 20% is recommended to be invested in both government bonds, which provide stable returns, and corporate fixed deposits, which offer higher interest rates. Mutual funds are another diversified investment option proposed at 5%. Lastly, gold ETFs are included at 5% for their hedge against inflation and diversification benefits."
+}
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
